@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music life</title>
+      <link rel="shortcut icon" href="bilder/Music.ico">
+      <!-- The Image slider for the site. -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
+    <!-- The CSS theme for the site. -->
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+      
+      <!--- Image header logo --->
+      <div id="header-wrapper">
+        <img src="bilder/logo.png" id="logo">
+      </div>
+      
+      <!--- Header navigation --->
+      <nav id="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+      
+      <!--- My views --->
+      <main role="main">
+          
+        <div id="music"> 
+            <!--- Music Wrapper --->
+            <div id="music-wrapper">
+                <h1>Music</h1>
+                <div class="sound-cloud">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/261441074&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                <div class="sound-cloud2">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220396062&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                <div class="sound-cloud3">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244133354&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                <div class="sound-cloud4">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225116912&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                <div class="sound-cloud5">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228991629&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                <div class="sound-cloud6">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/97761185&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    <button id="download-btn" class="cloud-down">DOWNLOAD</button>
+                </div>
+                
+            </div>  
+        </div>
+        
+        <div id="photos">
+            <!--- Photo Wrapper --->
+            <div id="photo-wrapper">
+                    
+            </div>
+        </div>  
+          
+        <div id="video">
+            <h1>Another View</h1>
+        </div>  
+          
+        <div id="home"> 
+            <!--- Home Wrapper --->
+            <div id="home-wrapper">
+                <!--- My image-slider --->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://thebanginbeats.files.wordpress.com/2014/09/event-banner-final.jpg   "></div>
+                        <div class="swiper-slide"><img src="http://static.wixstatic.com/media/13e356_2639323ab8c049bebc7e46a1a0503e19.jpg_srz_1903_1065_85_22_0.50_1.20_0.00_jpg_srz"></div>
+                        <div class="swiper-slide"><img src="https://i.ytimg.com/vi/iQpGq4HguVs/maxresdefault.jpg"></div>
+                        <div class="swiper-slide"><img src="https://i.ytimg.com/vi/TsfWq-yUXCY/maxresdefault.jpg"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!--- My mustache.js code --->
+                <div id="latest-merch">
+                <div id="content-placeholder"></div>
+               <script id="template" type="text/x-handlebars-template">
+                    <h1>LATEST MERCH ITEMS</h1>
+                    {{#people}}
+                        <u>
+                            <li>   
+                            <a href="#"><img src="bilder/{{shortname}}_tn.jpg" alt= "Photo of " /></a>   
+                            </li>    
+                        </u>
+                    {{/people}}  
+                    </script>
+                </div>
+                
+               <!--- Upcomming show and live photos ---> 
+                <div class="showsNphoto">
+                    
+                    <div class="live-shows">
+                        <h1 class="live-text">UPCOMING SHOWS</h1>
+                        <table id="shows">
+                          <tr>
+                            <th>DATE</th>
+                            <th>FESTIVAL</th>
+                            <th>COUNTRY</th>
+                          </tr>
+                          <tr>
+                            <td>16 APR 2016</td>
+                            <td>WATER FESTIVAL</td>
+                            <td>GERMANY</td>
+                          </tr>
+                          <tr>
+                            <td>26 MAY 2016</td>
+                            <td>WEEKEND FESTIVAL</td>
+                            <td>SWEDEN</td>
+                          </tr>
+                          <tr>
+                            <td>28 MAY 2016</td>
+                            <td>HOLI FESTIVAL</td>
+                            <td>MEXICO</td>
+                          </tr>
+                          <tr>
+                            <td>16 JUL 2016</td>
+                            <td>BEACHCLUB MONTREAL</td>
+                            <td>AUSTRAIL</td>
+                          </tr>
+                          <tr>
+                            <td>22 JUL 2016</td>
+                            <td>OPEN BEATZ FESTIVAL</td>
+                            <td>UK</td>
+                          </tr>
+                          <tr>
+                            <td>26 JUL 2016</td>
+                            <td>SEVEN VILAMOURA</td>
+                            <td>GERMANY</td>
+                          </tr>
+                          <tr>
+                            <td>04 AUG 2016</td>
+                            <td>WEEKEND FESTIVAL</td>
+                            <td>ITALY</td>
+                          </tr>
+                        </table>
+                    </div>
+    
+                    <div class="live-photos">
+                        <h1 class="photo-text">LIVE PHOTOS</h1>
+                        <!--- My image-slider --->
+                        <div class="live-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="http://bit.ly/2nOIyQ5"></div>
+                                <div class="swiper-slide"><img src="http://bit.ly/2njarlw"></div>
+                                <div class="swiper-slide"><img src="http://bit.ly/2nGRPgo"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="live-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Latest videos --->
+                <div class="video-wrapper">
+                    <h1>LATEST VIDEOS</h1>
+                    <iframe src="https://www.youtube.com/embed/JDglMK9sgIQ"></iframe>
+                    <iframe src="https://www.youtube.com/embed/089IRvkNAGg"></iframe> 
+                    <iframe src="https://www.youtube.com/embed/YJVmu6yttiw"></iframe>
+                </div>
+            </div>
+        </div>
+      </main>
+      
+      <!--- Footer here! --->
+        <footer id="main-footer">
+            <div class="footer-wrapper">
+                <ul class="social-media">
+                 <h1>Social media</h1>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Soundcloud</a></li>
+                </ul>
+                <ul class="company">
+                 <h1>Company</h1>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms & Privacy Policy</a></li>
+                    <li><a href="#">SEO Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Analytics</a></li>
+                 </ul>
+                        
+                <div class="footer-text-box">
+                    <ul class="footer-text">
+                        <li><a href="">MUSIC.COM</a></li>
+                        <li><a href="">©COPYRIGHT 2016</a></li>
+                        <li><a href="">ALL RIGHTS RESERVED</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- The JavaScript code for handlebar, mustache and jquery. -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>     
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+      
+      <!-- The JavaScript code for image-slide. -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
+      
+      <!-- The JavaScript code for dynamic behavior. -->
+      <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,427 @@
+/* Remove padding and margin */ 
+  
+
+
+/* -----------------------the-default-view-Home----------------------- */
+*{ 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px 0; 
+}
+
+main > * {
+    display: none;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation: all 0.3s ease;
+}
+
+main > *:last-child {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main > *:target {
+    display: block;
+    animation: fadeIn 0.5s linear 1;
+}
+
+main > *:target ~ * {
+    display: none;
+}
+
+    /* ----HOME PAGE---- */
+#home, #music, #photos, #video {
+    background: url(bilder/hed2.jpg);
+    background-size: cover;
+}
+
+    /* ----Home Wrapper page---- */
+#home-wrapper, #music-wrapper, #photo-wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+     /* ----Image header logo---- */
+#header-wrapper {
+    width: 100%;
+    background-color: black;
+}
+
+
+#logo {
+    display: block;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 220px;
+    height: 87px;
+}
+
+    /* ----Navigation bar---- */
+#navigation {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition-duration: 2s;
+    background-color: black;
+    border-bottom:1px solid #000048;
+    border-top:1px solid #000031;
+}
+
+
+#navigation a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Helvetica Neue","Helvetica","Arial";
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #676767;
+    border-top: 1px solid #676767;
+}
+
+#navigation a:hover {
+    color: red;
+    transition: all .3s ease;
+}
+
+#navigation li {
+    display: inline; 
+    margin: 30px;
+}
+
+#navigation ul {
+   text-align: center;
+}
+
+/* -----IMAGE-SLIDER UNDER HEADER!!!!---- */
+.swiper-container {
+    position: relative;
+    width: 1200px;
+    height: 390px;
+   
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+        
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* IMAGE-SLIDER UNDER HEADER ENDS!!!! */
+
+
+    /* ----latest-merch---- */
+#latest-merch {
+    margin-top: 70px;
+    border-bottom: 2px solid #ffffff;
+    
+}
+
+#latest-merch li {
+    width: 23.5%;
+    padding: 0 7.5px;
+    display: inline-block;
+}
+
+#latest-merch img {
+    width: 100%;
+    height: 320px;
+    margin-top: 12px;
+    border: .5px solid white;
+    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#latest-merch img:hover {
+    border: 1px solid #a05454;
+    transition: all .1s ease-in;
+}
+
+#latest-merch h1 {
+    font-family: "Helvetica Neue","Helvetica","Arial";
+    color: white;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+}
+
+
+
+/* ----SHOWS AND PHOTOS---- */
+.showsNphoto {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.live-text, .photo-text {
+    position: relative;
+    bottom: 40px;
+    color: white;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+    font-family: "Helvetica Neue","Helvetica","Arial";
+}
+
+.live-shows {
+    width: 45%;
+    height: 320px;
+    float: left;
+    border: 3px solid #ffffff;
+    margin-top: 12px;
+    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.live-photos {
+    width: 45%;
+    float: right;
+    margin-top: 19px;
+}
+
+    /* ----IMAGE-SLIDER FOR LIVE PHOTOS----- */
+.live-container {
+    top: -28px;
+    position: relative;
+}
+
+.live-slide {
+    background-position: center;
+    background-size: cover;
+}
+    /* IMAGE-SLIDER FOR LIVE PHOTOS */
+
+
+    /* ----Upcomming shows!---- */
+#shows {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    top: -28px;
+}
+
+#shows td, #shows th {
+    text-align: left;
+    padding: 8px;
+}
+
+#shows {
+    background-color: #f2f2f2
+}
+
+#shows tr:hover {
+    background-color: #ddd;
+}
+
+#shows th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+    /* ----Latest Videos!---- */
+.video-wrapper {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.video-wrapper h1 {
+    font-family: "Helvetica Neue","Helvetica","Arial";
+    color: white;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+    width: 385px;
+    height: 315px;
+    border: 1px solid white;
+    margin: 5px;
+    
+     -moz-border-radius: 1px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000000;
+
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+}
+
+
+
+    /* --------FOOTER-------- */
+#main-footer {
+    width: 100%;
+    height: 350px;
+    background-color:#0d111a;
+    border-top:1px solid #000048;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.social-media, .company {
+    float: left;
+    margin-top: 20px;
+    margin-right: 100px;
+    list-style: none;
+    display: block;
+}
+
+.social-media li .company li {
+    margin: 3px 0px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.social-media a, .company a {
+    text-decoration: none;
+    color: #9d9d9d;
+    font-size: 19px;
+    line-height: 1.35em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.social-media h1, .company h1 {
+    font-family: 'Dosis', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  color: #fff;
+  
+  /* THIS DOES THE TRICK */
+  text-shadow:
+	1px 1px 0 #CCC,
+	1px 1px 0 #CCC, /* end of light grey shadow */
+	3px 3px 0 #444,
+	4px 4px 0 #444,
+	5px 5px 0 #444, /* end of deep dark shadow */
+	0 -1px 20px rgba(0,0,0,0.7); /* some area shadow makes it nicer */
+}
+
+.social-media a:hover, .company a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-text-box {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.footer-text {
+    padding: 13px;
+    margin-top: 35px;
+    list-style: none;
+    border-top: 1px solid #989898;
+    border-bottom: 1px solid #989898;
+    text-align: center;
+}
+
+
+.footer-text li {
+    display: inline;
+    border-right: 1px solid white;
+}
+
+.footer-text a {
+    padding: 15px;
+    color: #d6d6d6;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
+/* -------------------------Some-view-MUSIC-------------------------- */
+
+#home-wrapper2 {
+    padding-top: 20px;
+}
+
+#music {
+    padding-bottom: 70px;
+    background-color: black;
+}
+
+#music h1 {
+    font-family: "Helvetica Neue","Helvetica","Arial";
+    color:white;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.sounds {
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.sound-cloud, .sound-cloud2, .sound-cloud3, .sound-cloud4, .sound-cloud5, .sound-cloud6 {
+    border-bottom: 2px solid white;
+    padding: 10px 0px;
+}
+
+.cloud-down {
+    font-weight: bold;
+    color: white;
+    font-family: "Helvetica Neue","Helvetica","Arial";
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    margin: 15px 0px;
+}
+
+
